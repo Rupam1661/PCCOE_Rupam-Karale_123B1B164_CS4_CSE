@@ -1,0 +1,6 @@
+question,expected_keyword,hit_in_top3,cited,latency_s
+Which function copies a name using strcpy?,set_name,True,ecu_can.c:17-28; ecu_can.c:9-20; ecu_can.c:25-36,0.429
+Where is the hard-coded password stored?,diag_password,True,ecu_can.c:1-12; ecu_can.c:33-44; ecu_can.c:9-20,0.141
+Which function reads input with gets and can overflow?,read_input,True,ecu_can.c:41-52; ecu_can.c:33-44; ecu_can.c:25-36,0.145
+Where is goto used for error handling?,retry,True,ecu_can.c:41-52; ecu_can.c:49-60; ecu_can.c:33-44,0.008
+Which function opens the config file with fopen?,read_config,True,ecu_can.c:33-44; ecu_can.c:25-36; ecu_can.c:49-60,0.15

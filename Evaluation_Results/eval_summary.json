@@ -1,0 +1,12 @@
+{
+  "scanner": {
+    "seeded_bugs": 8,
+    "detected": 8,
+    "TP": 8,
+    "FP": 0,
+    "FN": 0,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "retrieval_hit_rate": 1.0
+}

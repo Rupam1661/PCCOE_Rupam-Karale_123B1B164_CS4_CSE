@@ -1,0 +1,15 @@
+RULE SEC-01 (Critical): Do not use gets(). It performs no bounds checking and causes buffer overflow. Use fgets(buf, sizeof(buf), stdin) instead.
+
+RULE SEC-02 (High): Do not use strcpy, strcat or sprintf on fixed-size buffers. Use bounded versions (strncpy with explicit termination, snprintf) and check the destination size.
+
+RULE SEC-03 (High): No hard-coded passwords, keys or secrets in source code. Load credentials from a secure key store or protected configuration at runtime.
+
+RULE SEC-04 (High): Never pass externally controlled data as the format string of printf-family functions. Use printf("%s", msg).
+
+RULE BND-01 (Medium): Validate the length argument of memcpy/memmove against the destination buffer size before copying. Reject or clamp lengths larger than the destination (for example n > MAX_DATA).
+
+RULE MEM-01 (Medium): The return value of malloc/calloc must be checked for NULL before the pointer is dereferenced.
+
+RULE RES-01 (Medium): The return value of fopen must be checked for NULL before use, and the file must be closed on all paths.
+
+RULE STY-01 (Low, MISRA-oriented): Avoid the goto statement. Use structured control flow so that program flow is easy to review and verify.
